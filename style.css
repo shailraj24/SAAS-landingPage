@@ -1,0 +1,303 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: gray;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container{
+    margin: 10px 5%;
+    
+}
+.bgc-1{
+    background-color: #5A20CB;
+    border-radius: 20px 20px 0 0;
+}
+
+nav{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 0 10%;
+    padding-top: 2%;
+}
+.logo{
+    margin-right: auto;
+}
+.logo img{
+    width: 80px;
+}
+.nav-item{
+    display: inline-block;
+    list-style: none;
+    margin-left: 15px;
+    font-size: large;
+    color: white;
+}
+.nav-active{
+    color: aqua;
+    text-decoration: underline;
+
+}
+.nav-btn{
+    margin-left: 50px;
+    font-size: large;
+    padding: 8px 20px;
+    background-color: aqua;
+    border: none;
+    color: white;
+}
+
+.sec-1 .left{
+    position: relative;
+    width: 100%;
+}
+
+.sec-1 img{
+    width: 700px;
+
+      
+}
+.sec-1 .image{
+    position: absolute;
+    top: 0;
+
+}
+.sec-1{
+    display: flex;
+    justify-content: space-between;
+    height: 600px;
+}
+
+.sec-1 .right{
+    width: 100%;
+}
+
+.sec-1 .right h1{
+    margin-top: 80px;
+    font-size: 60px;
+    color: white;
+    line-height: 1.2;
+}
+
+.sec-1 .right h4{
+    font-size: 20px;
+    color: rgb(213, 202, 202);
+    line-height: 1;
+    margin-top: 30px;
+}
+
+.container-2{
+    background-color: white;
+}
+.sec-2{
+    margin: 10px 5%;
+    display: flex;
+    justify-content: space-between;
+    
+}
+.sec-2 img{
+    width: 700px;
+}
+.sec-2 .right-float h1{
+    font-size: 30px;
+    text-align: center;
+    margin-top: 80px;
+}
+.sec-2 li{
+    list-style: none;
+    margin-top: 30px;
+}
+.sec-2 ul{
+    margin: 6% 20%;
+    line-height: 2;
+}
+
+.sec-2 li i , .sec-2 li h4 , .sec-2 li p{
+    display: inline-block;
+}
+
+.sec-2 li i{
+    font-size: 20px;
+    margin-right: 20px;
+}
+.sec-2 li p{
+    margin-left: 40px;
+}
+.sec-2 li i.orange{
+    color: orange;
+}
+.sec-2 li i.green{
+    color: green;
+}
+.sec-2 li i.blue{
+    color: blue;
+}
+
+.container-3{
+    margin: 10px 5%;
+}
+
+.container-3 h1{
+    text-align: center;
+    font-size: 40px;
+    margin-top: 40px;
+}
+
+.cards{
+    display: flex;
+    justify-content: space-between;
+    margin: 50px 15% ;
+}
+
+.card{
+    width: 200px;
+    height: 270px;
+    background-color: lightpink;
+    text-align: center;
+    border-radius: 20px;
+    box-shadow: 6px 5px 5px pink;
+}
+
+.active-card{
+    background-color: rgba(219, 99, 207, 0.87);
+    border-radius: 20px;
+}
+
+.card .content{
+    padding: 5px;
+}
+
+.card img{
+    width: 60px;
+}
+
+.card .img{
+    background-color: lightgreen;
+    width: 100px;
+    height: 100px;
+    border-radius: 100px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    margin: 15px auto;
+}
+
+.card .description{
+    margin-top: 40px;
+}
+
+.card .description h3{
+    font-weight: 700;
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-top: 55px;
+}
+
+.card .description p{
+    line-height: 1.2;
+    margin-right: 10px;
+    margin-left: 10px;
+    font-size:small
+}
+
+@media screen and (max-width:650px) {
+    nav .logo , .nav-btn ,.nav-item:nth-child(2),.nav-item:nth-child(3) {
+        display: none;
+    }
+    .nav-item{
+        font-size: 15px;
+        margin-left: 5px;
+    }
+    nav{
+        justify-content: center;
+    }
+    .sec-1{
+        display: block;
+        height: 400px;
+    }
+    .sec-1 .image{
+        display: none;
+    }
+    .sec-1 .right h1{
+        font-size: 35px;
+        line-height: 1.5;
+    }
+    .sec-1 .right h4{
+        font-weight: 400;
+    }
+    .sec-2 {
+        display: block;
+        margin: 5px;
+    }
+    .sec-2 .left-float{
+        display: none;
+    }
+
+    .sec-2 .right-float h1{
+        width: 350px;
+        font-size: 25px;
+    }
+    .container-2{
+        margin-top: -80px;
+    }
+    .sec-2 ul{
+        margin: 6% 4%;
+    }
+    .container-3 h1{
+        font-size: 25px;
+        line-height: 1.2;
+    }
+    .cards{
+        flex-direction: column;
+        align-items: center;
+        row-gap: 20px;
+    }
+}
+
+
+@media screen and (min-width:651px) and (max-width:1150px) {
+    nav .logo , .nav-btn  {
+        display: none;
+    }
+    nav{
+        justify-content: center;
+    }
+    .sec-1 .image img , .sec-2 img{
+        width: 400px;
+    }
+    .sec-1 .image img{
+        display: block;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .sec-1{
+        display: block;
+    }
+    .sec-1 .right h1{
+        font-size: 40px;
+        line-height: 1.5;
+    }
+    .sec-1 .right h4{
+        font-weight: 400;
+    }
+    .sec-2{
+        display: block;
+    }
+    .sec-2 .img img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .cards{
+        margin: 10px 5%;
+        flex-wrap: wrap;
+        row-gap: 15px;
+    }
+}
